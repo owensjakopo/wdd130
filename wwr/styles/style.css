@@ -159,8 +159,8 @@ main section img {
 
 .book:hover,
 .join:hover {
-    background-color: #fb8500;
-    color: #023047;
+    background-color: #023047;
+    color: #fb8500;
     text-decoration: underline;
 }
 
@@ -177,13 +177,13 @@ h4 {
 
 .book,
 .join {
-    color: #fb8500;
+    color: #023047;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
-    background-color: #023047;
-    border: 1px solid #fb8500;
+    background-color: #fb8500;
+    border: 1px solid #023047;
     border-radius: 5px;
 }
 

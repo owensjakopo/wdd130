@@ -159,9 +159,10 @@ main section img {
 
 .book:hover,
 .join:hover {
-    background-color: #023047;
+    background-color: #219ebc;
     color: #fb8500;
     text-decoration: underline;
+    border: 2px solid #fb8500;
 }
 
 .home-title {

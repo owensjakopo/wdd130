@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Freehand&family=Lato&family=Lobster&family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lato&family=Lobster&display=swap');
 
 #content {
     max-width: 1600px;
@@ -7,7 +7,7 @@
 
 body {
     background-color: #fff;
-    font-family: Caveat, Raleway;
+    font-family: Caveat;
     font-size: 22px;
     padding: 0px;
     margin: 0px;
@@ -166,7 +166,7 @@ main section img {
 
 .home-title {
     color: #fb8500;
-    font-family: Lobster, Caveat;
+    font-family: Lobster;
     font-size: 2em;
     margin-top: 10px;
 }

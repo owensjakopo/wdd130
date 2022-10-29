@@ -163,6 +163,8 @@ main section img {
     color: #fb8500;
     text-decoration: underline;
     border: 2px solid #fb8500;
+    font-weight: bold;
+    font-family: Lato;
 }
 
 .home-title {

@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #FFCEC2   ;
-  --secondary-color: #230906 ;
-  --accent1-color: #C65858;
-  --accent2-color: #252422;
+  --primary-color: #3E2303   ;
+  --secondary-color: #272A29 ;
+  --accent1-color: #815B37;
+  --accent2-color: #E3C3AE;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Lobster;

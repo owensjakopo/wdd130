@@ -1,0 +1,24 @@
+html {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.image1 {
+    width: 100%;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+}
+.image2 {
+    width: 100%;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: center;
+}

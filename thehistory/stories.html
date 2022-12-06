@@ -18,7 +18,7 @@
         </nav>
     </header>
     <div class="hero">
-        <img class="hero-img" alt="emmanuel-phaeton" src="images/emmanuel-phaeton.jpg">
+        <img class="hero-img" id="myImg" alt="emmanuel-phaeton" src="images/emmanuel-phaeton.jpg">
         <div class="stories-hero-title">
         <h1>STORIES</h1>
         </div>
@@ -27,7 +27,47 @@
     <main class="home-grid">
         <div class="card">
             <h2 class="center">Stories</h2>
-            <img class="card-img" alt="Jon tyson" src="images/jon-tyson-your-story.jpg">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/jon-tyson-your-story.jpg" style="width:100%">
+                        <div class="text">Your story</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/imagination.jpg" style="width:100%">
+                        <div class="text">Imagination</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/emmanuel-phaeton.jpg" style="width:100%">
+                        <div class="text">Stories</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/brett-jordan.jpg" style="width:100%">
+                        <div class="text">People remember stories</div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
             <ul>
                 <li><a href="#story-1">An answer to a long said prayer.</a></li>
                 <li><a href="#">I will walk with you.</a></li>
@@ -39,7 +79,7 @@
         <div class="right" id="stories-1">
             <h2>An answer to a long said prayer.</h2>
             <p><em>by Owen S. Jakopo</em></p>
-            <img class="right-image" alt="oj" src="images/rsz_11owen.jpg">
+            <img class="right-image image" style="width: 150px" alt="oj" src="images/rsz_11owen.jpg">
             <p>I come from a big family of nine living children all depending on our mother. When a family is that big, it is almost impossible to get enough attention from a parent, especially a single one. I love my family so much and I thank my mother for all she did for me and my siblings to be where we are today.</p>
             <p>We grew up knowing only sorrow, we struggled for food, clothing items were not important at the time, a roof over our heads, and one meal a day was all that mattered. Life became more difficult for us, that most of us if not all had to drop out of school in primary level, there was not enough to pay one child, now imagine nine.</p>
             <p>As if that was enough, in 2005, our government put in motion an opperation, in this, they went around destroying houses that were built without house plans and most cotages were not part of the original house plans. My family was affected, the cottage we were renting was to be demolished and we had no place to go, again, we had to move and that was our life. A miracle happened, our father(may his soul rest in peace) turned up from nowhere and moved us to one of his houses in a different city.</p>
@@ -60,5 +100,33 @@
         </div>
     </footer>
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </body>
 </html>

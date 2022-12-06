@@ -3,13 +3,11 @@
 .container {
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Lato;
     /*box-sizing: border-box;*/
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Lobster;
-}
-p {
-  font-family: Lato;
 }
 .button {
    color: white;
@@ -111,6 +109,7 @@ p {
   grid-row: 1/5;
   border: 5px double #815B37;
   box-sizing: border-box;
+  background-color: #E3C3AE;
 }
 header h1 {
   font-size: xx-large;
@@ -174,11 +173,13 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: Lato;
 }
 
 footer a {
   color: #E3C3AE;
   text-decoration: none;
+  font-family: Caveat;
 }
 
 footer a:hover {
@@ -226,6 +227,7 @@ nav a {
   color: #E3C3AE;
   text-decoration: none;
   padding: 35px;
+  font-family: Caveat;
 }
 
 nav a:hover {
@@ -254,17 +256,22 @@ nav a:hover {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .hero, .container, .home-grid, .stories-grid, .stories-1, .about-grid {
       display: block;
       height: auto;
   }
   nav, footer {
       flex-direction: column;
+      font-family: Lato;
   }
   nav a {
       display: block;
       padding: 15px;
+      font-family: Caveat;
+  }
+  footer a {
+      font-family: Caveat;
   }
   .hero {
       margin-top: 0;

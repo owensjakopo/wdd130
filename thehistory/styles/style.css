@@ -236,6 +236,9 @@ nav a:hover {
   text-decoration: underline;
   box-shadow: 5px 5px 10px #023047;
 }
+.about p {
+  font-size: 1.3em;
+}
 
 .logo {
   padding-top: 5px;
@@ -271,7 +274,10 @@ nav a:hover {
   position: relative;
   margin: auto;
 }
-
+/*slideshow images*/
+.slideshow-container img {
+  width: 100%;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
